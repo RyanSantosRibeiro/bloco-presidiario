@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bloco Presidiário · Cachoeiras de Macacu desde 1975</title>
+  <meta name="description" content="Bloco Carnavalesco Presidiário, de Cachoeiras de Macacu (RJ), desde 1975. Sede no Clube Recreativo Piratas, Arrastão no Centro e Carnaval 2027 em preparação.">
+  <meta name="theme-color" content="#D91E2A">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Bloco Presidiário · desde 1975">
+  <meta property="og:description" content="A pena é uma só: pular carnaval em Cachoeiras de Macacu.">
+  <meta property="og:image" content="assets/fotos/desfile-rua.jpg">
+
+  <script>
+    // A cela abre uma vez por visita; nas próximas páginas o site já aparece aberto.
+    try { if (sessionStorage.getItem('cela-aberta')) document.documentElement.classList.add('cela-ja-abriu'); } catch (e) {}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PerformingGroup",
+    "name": "Bloco Carnavalesco Presidiário",
+    "foundingDate": "1975",
+    "location": {
+      "@type": "Place",
+      "name": "Clube Recreativo Piratas",
+      "address": { "@type": "PostalAddress", "addressLocality": "Cachoeiras de Macacu", "addressRegion": "RJ", "addressCountry": "BR" }
+    },
+    "sameAs": [
+      "https://www.instagram.com/blocopresidiario/",
+      "https://www.facebook.com/blocopresidiario/",
+      "https://www.threads.com/@blocopresidiario"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Abertura: as listras do uniforme sobem e descem e liberam a página -->
+  <div class="cela" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span>
+    <b class="cela__selo">desde<br>1975</b>
+  </div>
+
+  <canvas class="confete" aria-hidden="true"></canvas>
+
+  <header class="topo">
+    <nav class="nav" aria-label="Principal">
+      <a class="nav__marca" href="#inicio">Presidiário</a>
+      <ul class="nav__links">
+        <li><a href="#ficha">Ficha corrida</a></li>
+        <li><a href="#arrastao">Arrastão</a></li>
+        <li><a href="#listra">Vista a listra</a></li>
+        <li><a href="#2027">Carnaval 2027</a></li>
+      </ul>
+      <a class="nav__insta" href="https://www.instagram.com/blocopresidiario/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg>
+        <span>@blocopresidiario</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ HERÓI ============ -->
+    <section class="heroi" id="inicio" aria-labelledby="titulo">
+      <div class="heroi__xadrez" aria-hidden="true"></div>
+      <div class="caixa">
+        <h1 class="marca" id="titulo">
+          <span class="sr">Bloco </span>Presidiário
+        </h1>
+
+        <div class="heroi__grade">
+          <div class="heroi__texto">
+            <p class="heroi__lead">
+              Bloco carnavalesco de Cachoeiras de Macacu desde 1975.
+              Aqui a listra é uniforme, a sede é o Clube Piratas e a pena
+              é uma só: pular carnaval.
+            </p>
+
+            <div class="contagem" data-contagem aria-live="off">
+              <p class="contagem__rotulo">Faltam para o Carnaval 2027</p>
+              <div class="contagem__placas">
+                <div class="placa-num"><b data-dias>--</b><span>dias</span></div>
+                <div class="placa-num"><b data-horas>--</b><span>horas</span></div>
+                <div class="placa-num"><b data-minutos>--</b><span>min</span></div>
+                <div class="placa-num"><b data-segundos>--</b><span>seg</span></div>
+              </div>
+            </div>
+
+            <div class="acoes">
+              <a class="botao botao--papel" href="https://www.instagram.com/blocopresidiario/" target="_blank" rel="noopener">Seguir no Instagram</a>
+              <a class="botao botao--contorno-claro" href="#ficha">Ver a ficha corrida</a>
+            </div>
+          </div>
+
+          <figure class="heroi__foto">
+            <img src="assets/fotos/desfile-rua.jpg" width="360" height="640"
+                 alt="Folião de camisa florida abre os braços à frente do bloco lotado na rua, à noite, com bolhas de sabão no ar.">
+            <figcaption>Carnaval 2026, na rua</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LETREIRO ============ -->
+    <div class="letreiro" role="note" aria-label="Modo blackout ativado. Estamos preparando o que vem por aí. Carnaval 2027, aguarde.">
+      <div class="letreiro__trilho" aria-hidden="true">
+        <span>Modo blackout ativado</span><i></i>
+        <span>Estamos preparando o que vem por aí</span><i></i>
+        <span>Carnaval 2027</span><i></i>
+        <span>Aguarde</span><i></i>
+        <span>Modo blackout ativado</span><i></i>
+        <span>Estamos preparando o que vem por aí</span><i></i>
+        <span>Carnaval 2027</span><i></i>
+        <span>Aguarde</span><i></i>
+      </div>
+    </div>
+
+    <!-- ============ FICHA CORRIDA ============ -->
+    <section class="ficha" id="ficha" aria-labelledby="ficha-titulo">
+      <div class="ficha__regua" aria-hidden="true">
+        <span>2,00</span><span>1,90</span><span>1,80</span><span>1,70</span><span>1,60</span><span>1,50</span>
+      </div>
+      <div class="caixa">
+        <header class="secao-cabeca">
+          <h2 class="titulo" id="ficha-titulo">Ficha corrida</h2>
+          <p class="secao-lead">Meio século de bloco, registro por registro. Todo mundo aqui é reincidente.</p>
+        </header>
+
+        <ol class="registros">
+          <li class="registro">
+            <div class="placa" aria-hidden="true">
+              <small>Cachoeiras de Macacu · RJ</small>
+              <strong>1975</strong>
+              <small>Registro 001</small>
+            </div>
+            <div class="registro__texto">
+              <h3><span class="sr">1975. </span>Dezessete amigos e uma ideia</h3>
+              <p>Um grupo de 17 amigos funda o Presidiário em Cachoeiras de Macacu. A brincadeira de turma vira bloco, e o bloco vira tradição da cidade.</p>
+            </div>
+          </li>
+
+          <li class="registro">
+            <div class="placa" aria-hidden="true">
+              <small>Centro · Arrastão</small>
+              <strong>2023</strong>
+              <small>Registro 002</small>
+            </div>
+            <div class="registro__texto">
+              <h3><span class="sr">2023. </span>Arrastão no Centro</h3>
+              <p>O tradicional Arrastão concentra no Clube Recreativo Piratas e leva famílias e amigos às avenidas Floriano Peixoto e Lord Baden Powel, ao som de hinos do carnaval carioca e dos sambas do próprio bloco.</p>
+            </div>
+          </li>
+
+          <li class="registro">
+            <div class="placa placa--vermelha" aria-hidden="true">
+              <small>Meio século</small>
+              <strong>2025</strong>
+              <small>Registro 003</small>
+            </div>
+            <div class="registro__texto">
+              <h3><span class="sr">2025. </span>50 anos de listra</h3>
+              <p>O Presidiário chega aos 50 anos, contados desde aquela turma de 17 amigos.</p>
+            </div>
+          </li>
+
+          <li class="registro registro--com-fotos">
+            <div class="placa" aria-hidden="true">
+              <small>Clube Piratas</small>
+              <strong>2026</strong>
+              <small>Registro 004</small>
+            </div>
+            <div class="registro__texto">
+              <h3><span class="sr">2026. </span>O Piratas vira Baile do Havaí</h3>
+              <p>O enredo é puxado pelo colar de flores e traz de volta os lendários Bailes do Havaí do Clube Recreativo Piratas, a sede do bloco. O Havaí, aqui, se chama Carnaval.</p>
+              <div class="registro__fotos">
+                <figure class="polaroide polaroide--esq">
+                  <img src="assets/fotos/havai-2026-cartaz.jpg" width="512" height="640" loading="lazy"
+                       alt="Cartaz do Carnaval 2026: a fachada do Clube Piratas pintada de flores coloridas, com um coqueiro e o texto 'O Piratas vai virar Baile do Havaí'.">
+                  <figcaption>O cartaz do enredo</figcaption>
+                </figure>
+                <figure class="polaroide polaroide--dir">
+                  <img src="assets/fotos/baile-palco.jpg" width="512" height="640" loading="lazy"
+                       alt="Músicos tocam no palco do Baile do Havaí, com painel colorido escrito 'Baile do Havaí' e o salão cheio.">
+                  <figcaption>No palco, Celeiro Samba Clube</figcaption>
+                </figure>
+              </div>
+            </div>
+          </li>
+
+          <li class="registro">
+            <div class="placa placa--apagada" aria-hidden="true">
+              <small>Em sigilo</small>
+              <strong>2027</strong>
+              <small>Registro 005</small>
+            </div>
+            <div class="registro__texto">
+              <h3><span class="sr">2027. </span>Modo blackout</h3>
+              <p>Silêncio também faz parte da preparação. O próximo capítulo do enredo está sendo escrito, e o bloco só conta quando chegar a hora.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ARRASTÃO ============ -->
+    <section class="arrastao" id="arrastao" aria-labelledby="arrastao-titulo">
+      <div class="caixa arrastao__grade">
+        <div>
+          <header class="secao-cabeca">
+            <h2 class="titulo" id="arrastao-titulo">O Arrastão</h2>
+            <p class="secao-lead">O esquenta antes do carnaval: o Presidiário sai da sede e arrasta Cachoeiras de Macacu pelo Centro.</p>
+          </header>
+
+          <div class="trajeto">
+            <svg class="trajeto__serpentina" viewBox="0 0 40 400" preserveAspectRatio="none" aria-hidden="true">
+              <path pathLength="1" d="M20 0 C 36 40, 4 60, 20 100 S 36 160, 20 200 S 4 260, 20 300 S 36 360, 20 400"/>
+            </svg>
+            <ol class="trajeto__paradas">
+              <li>
+                <strong>Concentração no Clube Recreativo Piratas</strong>
+                <span>A sede do bloco. Na edição de 2023, a partir das 16h.</span>
+              </li>
+              <li>
+                <strong>Saída para o Centro</strong>
+                <span>Em 2023 o bloco ganhou a rua às 20h.</span>
+              </li>
+              <li>
+                <strong>Avenida Floriano Peixoto</strong>
+                <span>Hinos do carnaval carioca e sambas do bloco.</span>
+              </li>
+              <li>
+                <strong>Avenida Lord Baden Powel</strong>
+                <span>Famílias, amigos e muita listra no Centro.</span>
+              </li>
+            </ol>
+          </div>
+          <p class="nota">Horários e trajeto da edição de 2023. As datas de 2027 saem primeiro no <a href="https://www.instagram.com/blocopresidiario/" target="_blank" rel="noopener">Instagram do bloco</a>.</p>
+        </div>
+
+        <figure class="arrastao__foto">
+          <img src="assets/fotos/folia-noite.jpg" width="512" height="640" loading="lazy"
+               alt="Folião com apito na boca e camisa vermelha e azul do bloco à frente de uma multidão, à noite, com ritmistas e um palco iluminado ao fundo.">
+          <figcaption>Carnaval 2026. Foto: @uranosalvaya</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ VISTA A LISTRA ============ -->
+    <section class="listra" id="listra" aria-labelledby="listra-titulo">
+      <div class="listra__faixa" aria-hidden="true"></div>
+      <div class="caixa listra__grade">
+        <figure class="listra__foto listra__foto--grande">
+          <img src="assets/fotos/listras-elas.jpg" width="512" height="640" loading="lazy"
+               alt="Cinco integrantes do bloco posam no palco com vestidos listrados de preto e branco; a do centro usa um vestido dourado e um cocar de penas.">
+          <figcaption>No Presidiário, elas também estão à frente.</figcaption>
+        </figure>
+
+        <div class="listra__texto">
+          <h2 class="titulo" id="listra-titulo">Vista a listra</h2>
+          <p class="secao-lead">O nome já entrega o uniforme: listra preta e branca. Em cima dela, cada carnaval pinta o enredo do ano.</p>
+          <p>Em 2026 o abadá veio estampado com as flores do Havaí e a fachada do Piratas. Em 2027, só o bloco sabe.</p>
+
+          <figure class="listra__foto listra__foto--abada">
+            <img src="assets/fotos/havai-2026-abada.jpg" width="360" height="640" loading="lazy"
+                 alt="Abadá do Carnaval 2026: regata branca com estampa de flores e da fachada do Piratas, short vermelho e faixa listrada escrita 'Baile do Havaí'.">
+            <figcaption>Abadá 2026</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CARNAVAL 2027 · BLACKOUT ============ -->
+    <section class="blackout" id="2027" aria-labelledby="blackout-titulo">
+      <div class="caixa">
+        <div class="blackout__topo">
+          <svg class="bandeira" viewBox="0 0 64 80" aria-hidden="true">
+            <rect x="6" y="4" width="5" height="74" rx="2" fill="#FFF4DE"/>
+            <path d="M11 8 C 26 2, 34 16, 58 8 L 58 38 C 34 46, 26 32, 11 38 Z" fill="#D91E2A"/>
+          </svg>
+          <h2 class="blackout__titulo" id="blackout-titulo">
+            <span class="blackout__presid">PRESID,</span>
+            vamos começar?
+          </h2>
+        </div>
+
+        <p class="blackout__lead">Modo blackout ativado. O enredo de 2027 está sendo preparado e o bloco ainda não abriu o jogo. Quem segue no Instagram fica sabendo primeiro.</p>
+
+        <div class="contagem contagem--grande" data-contagem>
+          <p class="contagem__rotulo">O Carnaval começa no sábado, 6 de fevereiro de 2027</p>
+          <div class="contagem__placas">
+            <div class="placa-num"><b data-dias>--</b><span>dias</span></div>
+            <div class="placa-num"><b data-horas>--</b><span>horas</span></div>
+            <div class="placa-num"><b data-minutos>--</b><span>min</span></div>
+            <div class="placa-num"><b data-segundos>--</b><span>seg</span></div>
+          </div>
+        </div>
+
+        <div class="agenda">
+          <h3 class="agenda__titulo">Agenda 2027</h3>
+          <ul class="agenda__lista">
+            <li><span>Lançamento do enredo</span><em>a confirmar</em></li>
+            <li><span>Venda dos abadás</span><em>a confirmar</em></li>
+            <li><span>Arrastão no Centro</span><em>a confirmar</em></li>
+            <li><span>Desfiles no carnaval, 6 a 9 de fevereiro</span><em>horários a confirmar</em></li>
+          </ul>
+        </div>
+
+        <div class="acoes">
+          <a class="botao" href="https://www.instagram.com/blocopresidiario/" target="_blank" rel="noopener">Seguir @blocopresidiario</a>
+          <button class="botao botao--contorno-claro" type="button" data-soltar-confete>Soltar confete</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="caixa rodape__grade">
+      <div>
+        <p class="rodape__marca">Presidiário</p>
+        <p>Bloco Carnavalesco Presidiário<br>Cachoeiras de Macacu, RJ. Desde 1975.<br>Sede: Clube Recreativo Piratas.</p>
+      </div>
+      <ul class="rodape__redes" aria-label="Redes do bloco">
+        <li><a href="https://www.instagram.com/blocopresidiario/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/blocopresidiario/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.threads.com/@blocopresidiario" target="_blank" rel="noopener">Threads</a></li>
+      </ul>
+      <p class="rodape__credito">Fotos: acervo do bloco. Baile e folia por @uranosalvaya.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
